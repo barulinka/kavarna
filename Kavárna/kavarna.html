@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavárna</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('pozadi.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #4b3621;
+    margin: 0;
+    padding: 0;
+        }
+
+
+        header {
+            background-color: rgba(139, 90, 43, 0.8); 
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); 
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #6d4527;
+        }
+        form {
+            max-width: 500px;
+            margin: 25px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="káva.png" alt="Logo kavárny">
+            <span> CUP & COMFORT  </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#nabidka">Hlavní nabídka</a></li>
+                <li><a href="#objednavky">Objednávky</a></li>
+                <li><a href="#rezervace">Rezervace</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="nabidka">
+        <h1>VÍTEJTE</h1>
+        <p>CUP & COMFORT je útulná kavárna v srdci Prahy, kde si můžete vychutnat kvalitní kávu, domácí dezerty a příjemnou atmosféru.</p>
+    </section>
+
+    <section id="menu">
+        <h1>☕ Hlavní nabídka CUP & COMFORT 🍰</h1>
+        <p>☕ Káva & Teplé nápoje<br><br>
+            Espresso – 49 Kč<br><br>
+            Espresso Macchiato – 55 Kč<br><br>
+            Cappuccino – 65 Kč<br><br>
+            Caffè Latte – 75 Kč<br><br>
+            Flat White – 79 Kč<br><br>
+            Horká čokoláda – 69 Kč<br><br>
+            Čaj (černý, zelený, ovocný, bylinný) – 55 Kč<br><br>
+            🥤 Studené nápoje<br><br>
+            Ledová káva – 85 Kč<br><br>
+            Domácí limonáda (citrónová, jahodová, bezová) – 69 Kč<br><br>
+            Frappe – 89 Kč<br><br>
+            Čerstvě lisované džusy (pomeranč, jablko, mix) – 79 Kč<br><br>
+            🥐 Sladké pečivo & Dorty<br><br>
+            Domácí croissant – 49 Kč<br><br>
+            Cheesecake (jahodový, čokoládový, mango) – 85 Kč<br><br>
+            Tiramisu – 89 Kč<br><br>
+            Mrkvový dort – 79 Kč<br><br>
+            🥪 Snídaňové menu & Sendviče<br><br>
+            Avokádový toast s vejcem – 99 Kč<br><br>
+            Bageta se šunkou a sýrem – 85 Kč<br><br>
+            Caprese sendvič (mozzarella, rajčata, bazalka) – 95 Kč<br><br>
+            🛍️ Speciální nabídky<br><br>
+            Káva + dort dle výběru – 129 Kč<br><br>
+            Snídaňové menu (káva + croissant + džus) – 149 Kč</p>
+    </section>
+
+    <section id="objednavky">
+        <h1>Objednávky</h1>
+        <p>Možnost objednat si kávu online.</p>
+        <form class="form-container">
+            <input type="text" placeholder="Jméno" required>
+            <input type="text" placeholder="Druh kávy" required>
+            <input type="number" placeholder="Počet" required>
+            <button type="submit">Objednat</button>
+        </form>
+    </section>
+    
+    <section id="rezervace">
+        <h1>Rezervace</h1>
+        <p>Formulář pro rezervaci místa.</p>
+        <form class="form-container">
+            <input type="text" placeholder="Jméno" required>
+            <input type="number" placeholder="Počet osob" required>
+            <input type="datetime-local" required>
+            <button type="submit">Rezervovat</button>
+        </form>
+    </section>
+    
+    <section id="kontakt">
+        <h1>📍 Kontakt – CUP & COMFORT</h1>
+        <p>📌 Adresa:<br><br>
+            Náměstí Svobody 10, 110 00 Praha<br><br>
+            
+            📞 Telefon:<br><br>
+            +420 123 456 789<br><br>
+            
+            📧 E-mail:<br><br>
+            info@cupandcomfort.cz<br><br>
+            
+            ⏰ Otevírací doba:<br><br>
+            🗓️ Pondělí – Pátek: 7:00 – 20:00<br><br>
+            🗓️ Sobota – Neděle: 8:00 – 22:00<br><br>
+            
+            📲 Sledujte nás na sociálních sítích:<br><br>
+            🔗 Instagram: @cupandcomfort<br><br>
+            🔗 Facebook: Cup & Comfort Café<br><br>
+            
+            📍 Jak se k nám dostanete?<br><br>
+            🚌 MHD: Tramvaj 22, zastávka Náměstí Svobody<br><br>
+            🚗 Parkování: Možnost parkování v OC Palladium (5 minut chůze)</p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Web je připraven.");
+        });
+    </script>
+</body>
+</html>
